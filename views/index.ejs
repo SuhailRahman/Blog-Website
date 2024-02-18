@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Welcome to Blog Site</h1>
+<ul>
+    <% for(let blog of blogsList) { %>
+    <li><a href="/blog/<%=blog["id"]%>"><%=blog["title"] %></a></li>
+    <% } %>
+</ul>
+
+<form action="/add/blog" method="GET">
+    <input type="submit" value="Add Blog">
+</form>
+
+<%- include("partials/footer.ejs") %>

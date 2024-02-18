@@ -1,0 +1,22 @@
+{
+  "name": "capstone-project-blog",
+  "version": "1.0.0",
+  "description": "This is a blog project, where anyone can view, write, edit and delete articles about anything.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Suhail Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "jsdom": "^24.0.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0"
+  }
+}

@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Title <%= title %> </h1>
+
+<h3>Content</h3>
+<h4><%= content %></h4>
+
+<h4> Author: <%= author %></h4>
+<h5>Created At: <%= createdAt.toLocaleDateString('en-US') %></h5>
+<% if(locals.updatedBy) {%>
+<h5> Updated By: <%= locals.updatedBy %> </h5>
+<% } %>
+<% if(locals.updatedTimeStamp) {%>
+<h5> Updated At: <%= createdAt.toLocaleDateString('en-US') %></h5>
+<% } %>
+
+<form action="/edit/blog/<%=id%>" method="GET">
+    <input type="submit" value="Edit Blog">
+</form>
+
+<form method="POST" action="/blog/<%=id%>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete Blog">
+</form>
+
+
+<%- include("partials/footer.ejs") %>

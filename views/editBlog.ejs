@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<form method="POST" action="/blog/<%=id%>">
+    <label class="required" for="updatedBy">Updated By:</label>
+    <input type="text" id="updatedBy" name="updatedBy"><br><br>
+    <label class="required" for="title">Title:</label>
+    <input type="text" id="title" name="title"><br><br>
+    <label for="content">Content:</label>
+    <input type="text" id="content" name="content"><br><br>
+    <input type="hidden" name="_method" value="PUT">
+    <input type="submit" value="Cancel" name="submit">
+    <input type="submit" value="Submit" >
+</form>
+
+<%- include("partials/footer.ejs") %>
