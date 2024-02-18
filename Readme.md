@@ -14,7 +14,7 @@ This is a simple blog website built using Node.js, Express.js for the backend, a
 
 1. Clone the repository:
 ```
-git clone <repository_url>
+git clone https://github.com/SuhailRahman/Blog-Website.git
 ```
 
 2. Install dependencies:
@@ -41,26 +41,26 @@ Once the server is running, you can access the website at `http://localhost:3000
 
 ## File Structure
 
-.
-├── Readme.md
-├── index.js
-├── package.json
-├── public
-│   └── styles
-│       ├── headers.css
-│       └── main.css
-└── views
-    ├── addBlog.ejs
-    ├── blog.ejs
-    ├── editBlog.ejs
-    ├── index.ejs
-    └── partials
-        ├── footer.ejs
-        └── header.ejs
+- Readme.md
+- index.js
+- package.json
+- public
+  - styles
+    - headers.css
+    - main.css
+- views
+  - addBlog.ejs
+  - blog.ejs
+  - editBlog.ejs
+  - index.ejs
+  - partials
+    - footer.ejs
+    - header.ejs
+
 
 ## Contributing
 
 Contributions are welcome! Feel free to open a pull request or create an issue if you find any bugs or want to suggest improvements.
 
 ## Authors
-- [Suhail Rahman](https://github.com/SuhailRahman)
+[Suhail Rahman](https://github.com/SuhailRahman)
